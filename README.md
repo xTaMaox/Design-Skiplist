@@ -6,8 +6,6 @@ A skiplist is a data structure that takes O(log(n)) time to add, erase and searc
 
 For example, we have a Skiplist containing [30,40,50,60,70,90] and we want to add 80 and 45 into it. The Skiplist works this way:
 
-![1506_skiplist](https://user-images.githubusercontent.com/88260025/223166193-45840c75-1285-43e0-b540-2031626a6cb8.gif)
-
 Artyom Kalinin [CC BY-SA 3.0], via Wikimedia Commons
 
 You can see there are many layers in the Skiplist. Each layer is a sorted linked list. With the help of the top layers, add, erase and search can be faster than O(n). It can be proven that the average time complexity for each operation is O(log(n)) and space complexity is O(n).
